@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Account - Zutual</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            width: 250px;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            height: 100%;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background-color: #f0f0f0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            border-top: 1px solid #ddd;
+            margin-top: auto;
+        }
+        main {
+            margin-left: 250px;
+            flex-grow: 1;
+            padding: 20px;
+            background: #f4f4f9;
+            overflow-y: auto;
+            height: 100vh;
+        }
+        .content {
+            max-width: 800px;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .delete-account-container {
+            text-align: center;
+        }
+        .delete-account-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .delete-account-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .delete-account-container ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .delete-account-container ol li {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .delete-account-container form {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .delete-account-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .delete-account-container input,
+        .delete-account-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            color: #333;
+        }
+        .delete-account-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .delete-account-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/1024.png" alt="Zutual Logo" class="logo">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="privacy_policy.html">Privacy Policy</a>
+            <a href="delete_account.html">Delete Account</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <footer>
+            <p>&copy; 2024 Zutual. All rights reserved.</p>
+        </footer>
+    </header>
+    <main>
+        <div class="content">
+            <div class="delete-account-container">
+                <h1>Delete Your Account</h1>
+                <p>If you wish to delete your account and all associated data, you can do so directly from within the app. Please follow the instructions below:</p>
+                <ol>
+                    <li>Open the app and log in to your account.</li>
+                    <li>Navigate to the "Settings" icon in the profile page.</li>
+                    <li>Find and select the "Delete Account" option.</li>
+                    <li>Confirm your choice to delete your account.</li>
+                </ol>
+                <p>If you are unable to access the app or need further assistance, please contact our support team using the form below:</p>
+                <form id="deleteAccountForm" action="mailto:support@zutual.com" method="post" enctype="text/plain">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
