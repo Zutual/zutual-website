@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zutual.zutual",
+      "sha256_cert_fingerprints":
+        ["72:CF:72:7B:9E:09:62:5F:ED:74:98:A5:98:05:AD:89:B0:54:5B:57:7D:A5:EE:55:4F:DA:C4:64:C2:7E:F0:E0"]
+    }
+  }
+]
