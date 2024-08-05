@@ -11,9 +11,21 @@
 <!-- Font Google -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+    function redirectToStore() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.zutual.zutual';
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = 'https://apps.apple.com/in/app/zutual/id6557081181';
+        } else {
+            console.log('Non-Android/iOS device detected');
+        }
+    }
+</script>
 </head>
 
-<body>
+<body onload="redirectToStore()">
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
   <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/zutual-red-xs.png" alt="Zutual Logo" class="logo-1"> </a>
@@ -46,12 +58,12 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-                <img src="images/iphone_3.png" class="wow fadeInUp bigger-image">>
+                <img src="images/iphone_3.png" class="wow fadeInUp bigger-image" alt="">>
         </div>
       </div>
     </div>
   </div>
-  <span class="svg-wave"> <img class="svg-hero" src="images/wave.svg"> </span> </section>
+   </section>
 
 <!-------Banner End------->
 
