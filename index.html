@@ -14,37 +14,37 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript">
-    // function redirectToAppOrStore() {
-    //   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    //   var deepLinkURL = 'zutual://'; // Custom URL scheme for your app
-    //   var path = window.location.pathname; // This gets the path after the domain
-    //   var finalDeepLink = deepLinkURL + path.substring(1); // Combine to form the full deep link
-    //
-    //   if (/android/i.test(userAgent)) {
-    //     // Try to open the app via the deep link
-    //     window.location.href = finalDeepLink;
-    //
-    //     // If the app is not installed, redirect to the Play Store after a delay
-    //     setTimeout(function () {
-    //       window.location.href = 'https://play.google.com/store/apps/details?id=com.zutual.zutual';
-    //     }, 1500);
-    //   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    //     // Try to open the app via the deep link
-    //     window.location.href = finalDeepLink;
-    //
-    //     // If the app is not installed, redirect to the App Store after a delay
-    //     setTimeout(function () {
-    //       window.location.href = 'https://apps.apple.com/in/app/zutual/id6557081181';
-    //     }, 1500);
-    //   } else {
-    //     console.log('Non-Android/iOS device detected');
-    //   }
-    // }
-    //
-    // // Automatically redirect when the page loads
-    // window.onload = function() {
-    //   redirectToAppOrStore();
-    // };
+    function redirectToAppOrStore() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      var deepLinkURL = 'zutual://'; // Custom URL scheme for your app
+      var path = window.location.pathname; // This gets the path after the domain
+      var finalDeepLink = deepLinkURL + path.substring(1); // Combine to form the full deep link
+
+      if (/android/i.test(userAgent)) {
+        // Try to open the app via the deep link
+        window.location.href = finalDeepLink;
+
+        // If the app is not installed, redirect to the Play Store after a delay
+        setTimeout(function () {
+          window.location.href = 'https://play.google.com/store/apps/details?id=com.zutual.zutual';
+        }, 1500);
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // Try to open the app via the deep link
+        window.location.href = finalDeepLink;
+
+        // If the app is not installed, redirect to the App Store after a delay
+        setTimeout(function () {
+          window.location.href = 'https://apps.apple.com/in/app/zutual/id6557081181';
+        }, 1500);
+      } else {
+        console.log('Non-Android/iOS device detected');
+      }
+    }
+
+    // Automatically redirect when the page loads
+    window.onload = function() {
+      redirectToAppOrStore();
+    };
     </script>
 </head>
 
