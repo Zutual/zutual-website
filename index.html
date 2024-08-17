@@ -16,10 +16,26 @@
 <script type="text/javascript">
     function redirectToStore() {
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var deepLinkURL = 'zutual://'; // Custom URL scheme for your app
+        var path = window.location.pathname; // This gets the path after the domain
+        var finalDeepLink = deepLinkURL + path.substring(1); // Combine to form the full deep link
+
         if (/android/i.test(userAgent)) {
-            window.location.href = 'https://play.google.com/store/apps/details?id=com.zutual.zutual';
+            // Try to open the app via the deep link
+            window.location.href = finalDeepLink;
+
+            // If the app is not installed, redirect to the Play Store after a delay
+            setTimeout(function () {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.zutual.zutual';
+            }, 1000);
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            window.location.href = 'https://apps.apple.com/in/app/zutual/id6557081181';
+            // Try to open the app via the deep link
+            window.location.href = finalDeepLink;
+
+            // If the app is not installed, redirect to the App Store after a delay
+            setTimeout(function () {
+                window.location.href = 'https://apps.apple.com/in/app/zutual/id6557081181';
+            }, 1000);
         } else {
             console.log('Non-Android/iOS device detected');
         }
