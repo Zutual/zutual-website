@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        function redirectToAppOrStore() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                // Redirect to Google Play Store
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.zutual.zutual';
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // Redirect to Apple App Store
+                window.location.href = 'https://apps.apple.com/in/app/zutual/id6557081181';
+            } else {
+                // Display message if not on a mobile device
+                document.getElementById('message').textContent = 'The page you are looking for could not be found. Please visit our site on your mobile device to download the app.';
+            }
+        }
+
+        // Automatically redirect when the page loads
+        window.onload = function() {
+            redirectToAppOrStore();
+        };
+    </script>
+</head>
+<body>
+    <h1>404</h1>
+    <p id="message">Page Not Found. Redirecting...</p>
+</body>
+</html>
