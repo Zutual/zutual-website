@@ -1,215 +1,259 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Terms and Conditions - Zutual</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <style>
-  body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      padding: 0;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <title>Terms and Conditions - Zutual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #21D5F9;
+            --secondary-color: #ec008c;
+            --bg-dark: #191B1A;
+            --text-light: rgba(255, 255, 255, 0.87);
+            --text-dim: rgba(255, 255, 255, 0.6);
+        }
 
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
 
-    h1 {
-      color: #0056b3;
-      font-size: 26px;
-    }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(33, 213, 249, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
 
-    h2 {
-      border-bottom: 2px solid #0056b3;
-      color: #0056b3;
-      padding-bottom: 10px;
-      margin-top: 20px;
-    }
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 20px rgba(33, 213, 249, 0.3);
+        }
 
-    p, ul {
-      margin-top: 10px;
-      font-size: 16px;
-    }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            padding-bottom: 10px;
+            margin-top: 2rem;
+            border-bottom: 1px solid rgba(33, 213, 249, 0.2);
+        }
 
-    li {
-      margin-bottom: 5px;
-    }
+        p, ul {
+            margin-top: 1rem;
+            color: var(--text-dim);
+            font-size: 1rem;
+        }
 
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
+        li {
+            margin-bottom: 0.5rem;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-    strong {
-      color: #000;
-    }
+        a:hover {
+            color: var(--secondary-color);
+        }
 
-    @media (max-width: 768px) {
-      .container {
-        padding: 10px;
-        margin: 10px;
-      }
+        strong {
+            color: var(--text-light);
+        }
 
-      h1, h2 {
-        font-size: 18px;
-      }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(25, 27, 26, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(33, 213, 249, 0.05);
+        }
 
-      p, ul {
-        font-size: 14px;
-      }
-    }
-  </style>
+        .navbar-logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            text-shadow: 0 0 20px rgba(33, 213, 249, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px 10px;
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p, ul {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Terms and Conditions</h1>
-    <p><strong>Last revised on 22-July-2024</strong></p>
-    <p>Welcome to Zutual! These Terms of Use ("Terms") govern your use of the Zutual application and services (Service), provided by Zutual Private Limited. By creating an account or using Zutual, you agree to these Terms.</p>
+    <nav class="navbar">
+        <a href="index-v2.html" class="navbar-logo">Zutual</a>
+    </nav>
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <p><strong>Last revised on 22-July-2024</strong></p>
+        <p>Welcome to Zutual! These Terms of Use ("Terms") govern your use of the Zutual application and services (Service), provided by Zutual Private Limited. By creating an account or using Zutual, you agree to these Terms.</p>
 
-    <h2>1. Acceptance of Terms of Use Agreement</h2>
-    <p>By creating a Zutual account, whether through a mobile device, mobile application, or computer (collectively, the Service), you agree to be bound by (i) these Terms of Use, (ii) our Privacy Policy, and (iii) any terms disclosed and agreed to by you if you purchase additional features, products, or services we offer on the Service (collectively, this "Agreement"). If you do not accept and agree to be bound by all of the terms of this Agreement, please do not use the Service.</p>
+        <h2>1. Acceptance of Terms of Use Agreement</h2>
+        <p>By creating a Zutual account, whether through a mobile device, mobile application, or computer (collectively, the Service), you agree to be bound by (i) these Terms of Use, (ii) our Privacy Policy, and (iii) any terms disclosed and agreed to by you if you purchase additional features, products, or services we offer on the Service (collectively, this "Agreement"). If you do not accept and agree to be bound by all of the terms of this Agreement, please do not use the Service.</p>
 
-    <h2>2. Eligibility</h2>
-    <p>You must be at least 12 years of age to create an account on Zutual and use the Service. By creating an account and using the Service, you represent and warrant that:</p>
-    <ul>
-      <li>You can form a binding contract with Zutual.</li>
-      <li>You are not a person who is barred from using the Service under the laws of the United States or any other applicable jurisdiction.</li>
-      <li>You will comply with this Agreement and all applicable local, state, national, and international laws, rules, and regulations.</li>
-      <li>You have never been convicted of a felony or indictable offense (or crime of similar severity), a sex crime, or any crime involving violence, and you are not required to register as a sex offender with any state, federal or local sex offender registry.</li>
-    </ul>
+        <h2>2. Eligibility</h2>
+        <p>You must be at least 12 years of age to create an account on Zutual and use the Service. By creating an account and using the Service, you represent and warrant that:</p>
+        <ul>
+            <li>You can form a binding contract with Zutual.</li>
+            <li>You are not a person who is barred from using the Service under the laws of the United States or any other applicable jurisdiction.</li>
+            <li>You will comply with this Agreement and all applicable local, state, national, and international laws, rules, and regulations.</li>
+            <li>You have never been convicted of a felony or indictable offense (or crime of similar severity), a sex crime, or any crime involving violence, and you are not required to register as a sex offender with any state, federal or local sex offender registry.</li>
+        </ul>
 
-    <h2>3. Your Account</h2>
-    <p>In order to use Zutual, you may sign in using your email or phone number. You are responsible for maintaining the confidentiality of your login credentials and are solely responsible for all activities that occur under those credentials. If you think someone has gained access to your account, please immediately contact us.</p>
+        <h2>3. Your Account</h2>
+        <p>In order to use Zutual, you may sign in using your email or phone number. You are responsible for maintaining the confidentiality of your login credentials and are solely responsible for all activities that occur under those credentials. If you think someone has gained access to your account, please immediately contact us.</p>
 
-    <h2>4. Modifying the Service and Termination</h2>
-    <p>Zutual is always striving to improve the Service and bring you additional functionality that you will find engaging and useful. This means we may add new product features or enhancements from time to time as well as remove some features, and if these actions do not materially affect your rights or obligations, we may not provide you with notice before taking them. We may suspend the Service entirely, in which event we will notify you in advance unless extenuating circumstances, such as safety or security concerns, prevent us from doing so.</p>
-    <p>You may terminate your account at any time, for any reason, by following the instructions in "Settings" in the Service. Zutual may terminate your account at any time without notice if it believes that you have violated this Agreement. Upon such termination, you will not be entitled to any refund for purchases. After your account is terminated, this Agreement will terminate, except that the following provisions will still apply: Sections 4, 5, and 10 through 18.</p>
+        <h2>4. Modifying the Service and Termination</h2>
+        <p>Zutual is always striving to improve the Service and bring you additional functionality that you will find engaging and useful. This means we may add new product features or enhancements from time to time as well as remove some features, and if these actions do not materially affect your rights or obligations, we may not provide you with notice before taking them. We may suspend the Service entirely, in which event we will notify you in advance unless extenuating circumstances, such as safety or security concerns, prevent us from doing so.</p>
+        <p>You may terminate your account at any time, for any reason, by following the instructions in "Settings" in the Service. Zutual may terminate your account at any time without notice if it believes that you have violated this Agreement. Upon such termination, you will not be entitled to any refund for purchases. After your account is terminated, this Agreement will terminate, except that the following provisions will still apply: Sections 4, 5, and 10 through 18.</p>
 
-    <h2>5. Safety; Your Interactions with Other Members</h2>
-    <p>Though Zutual strives to encourage a respectful member experience, it is not responsible for the conduct of any member on or off of the Service. You agree to use caution in all interactions with other members, particularly if you decide to communicate off the Service or meet in person. In addition, you agree to review and follow Zutual’s Safety Tips prior to using the Service. You agree that you will not provide your financial information (for example, your credit card or bank account information), or wire or otherwise send money, to other members.</p>
-    <p>YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER MEMBERS. YOU UNDERSTAND THAT ZUTUAL DOES NOT CONDUCT CRIMINAL BACKGROUND CHECKS ON ITS MEMBERS OR OTHERWISE INQUIRE INTO THE BACKGROUND OF ITS MEMBERS. ZUTUAL MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OF MEMBERS.</p>
+        <h2>5. Safety; Your Interactions with Other Members</h2>
+        <p>Though Zutual strives to encourage a respectful member experience, it is not responsible for the conduct of any member on or off of the Service. You agree to use caution in all interactions with other members, particularly if you decide to communicate off the Service or meet in person. In addition, you agree to review and follow Zutual’s Safety Tips prior to using the Service. You agree that you will not provide your financial information (for example, your credit card or bank account information), or wire or otherwise send money, to other members.</p>
+        <p>YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER MEMBERS. YOU UNDERSTAND THAT ZUTUAL DOES NOT CONDUCT CRIMINAL BACKGROUND CHECKS ON ITS MEMBERS OR OTHERWISE INQUIRE INTO THE BACKGROUND OF ITS MEMBERS. ZUTUAL MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OF MEMBERS.</p>
 
-    <h2>6. Rights Zutual Grants You</h2>
-    <p>Zutual grants you a personal, worldwide, royalty-free, non-assignable, nonexclusive, revocable, and non-sublicensable license to access and use the Service. This license is for the sole purpose of letting you use and enjoy the Services benefits as intended by Zutual and permitted by this Agreement. Therefore, you agree not to:</p>
-    <ul>
-      <li>Use the Service or any content contained in the Service for any commercial purposes without our written consent.</li>
-      <li>Copy, modify, transmit, create any derivative works from, make use of, or reproduce in any way any copyrighted material, images, trademarks, trade names, service marks, or other intellectual property, content or proprietary information accessible through the Service without Zutual’s prior written consent.</li>
-      <li>Express or imply that any statements you make are endorsed by Zutual.</li>
-      <li>Use any robot, bot, spider, crawler, scraper, site search/retrieval application, proxy or other manual or automatic device, method or process to access, retrieve, index, "data mine", or in any way reproduce or circumvent the navigational structure or presentation of the Service or its contents.</li>
-      <li>Use the Service in any way that could interfere with, disrupt or negatively affect the Service or the servers or networks connected to the Service.</li>
-      <li>Upload viruses or other malicious code or otherwise compromise the security of the Service.</li>
-      <li>Forge headers or otherwise manipulate identifiers in order to disguise the origin of any information transmitted to or through the Service.</li>
-      <li>"Frame" or "mirror" any part of the Service without Zutual’s prior written authorization.</li>
-      <li>Use meta tags or code or other devices containing any reference to Zutual or the Service (or any trademark, trade name, service mark, logo or slogan of Zutual) to direct any person to any other website for any purpose.</li>
-      <li>Modify, adapt, sublicense, translate, sell, reverse engineer, decipher, decompile or otherwise disassemble any portion of the Service, or cause others to do so.</li>
-      <li>Use or develop any third-party applications that interact with the Service or other members' Content or information without our written consent.</li>
-      <li>Use, access, or publish the Zutual application programming interface without our written consent.</li>
-      <li>Probe, scan or test the vulnerability of our Service or any system or network.</li>
-      <li>Encourage or promote any activity that violates this Agreement.</li>
-    </ul>
-    <p>Zutual may investigate and take any available legal action in response to illegal and/or unauthorized uses of the Service, including termination of your account.</p>
-    <p>Any software that we provide you may automatically download and install upgrades, updates, or other new features. You may be able to adjust these automatic downloads through your device's settings.</p>
+        <h2>6. Rights Zutual Grants You</h2>
+        <p>Zutual grants you a personal, worldwide, royalty-free, non-assignable, nonexclusive, revocable, and non-sublicensable license to access and use the Service. This license is for the sole purpose of letting you use and enjoy the Services benefits as intended by Zutual and permitted by this Agreement. Therefore, you agree not to:</p>
+        <ul>
+            <li>Use the Service or any content contained in the Service for any commercial purposes without our written consent.</li>
+            <li>Copy, modify, transmit, create any derivative works from, make use of, or reproduce in any way any copyrighted material, images, trademarks, trade names, service marks, or other intellectual property, content or proprietary information accessible through the Service without Zutual’s prior written consent.</li>
+            <li>Express or imply that any statements you make are endorsed by Zutual.</li>
+            <li>Use any robot, bot, spider, crawler, scraper, site search/retrieval application, proxy or other manual or automatic device, method or process to access, retrieve, index, "data mine", or in any way reproduce or circumvent the navigational structure or presentation of the Service or its contents.</li>
+            <li>Use the Service in any way that could interfere with, disrupt or negatively affect the Service or the servers or networks connected to the Service.</li>
+            <li>Upload viruses or other malicious code or otherwise compromise the security of the Service.</li>
+            <li>Forge headers or otherwise manipulate identifiers in order to disguise the origin of any information transmitted to or through the Service.</li>
+            <li>"Frame" or "mirror" any part of the Service without Zutual’s prior written authorization.</li>
+            <li>Use meta tags or code or other devices containing any reference to Zutual or the Service (or any trademark, trade name, service mark, logo or slogan of Zutual) to direct any person to any other website for any purpose.</li>
+            <li>Modify, adapt, sublicense, translate, sell, reverse engineer, decipher, decompile or otherwise disassemble any portion of the Service, or cause others to do so.</li>
+            <li>Use or develop any third-party applications that interact with the Service or other members' Content or information without our written consent.</li>
+            <li>Use, access, or publish the Zutual application programming interface without our written consent.</li>
+            <li>Probe, scan or test the vulnerability of our Service or any system or network.</li>
+            <li>Encourage or promote any activity that violates this Agreement.</li>
+        </ul>
+        <p>Zutual may investigate and take any available legal action in response to illegal and/or unauthorized uses of the Service, including termination of your account.</p>
+        <p>Any software that we provide you may automatically download and install upgrades, updates, or other new features. You may be able to adjust these automatic downloads through your device's settings.</p>
 
-    <h2>7. Rights You Grant Zutual</h2>
-    <p>By creating an account, you grant to Zutual a worldwide, transferable, sub-licensable, royalty-free, right and license to host, store, use, copy, display, reproduce, adapt, edit, publish, modify and distribute information you post, upload, display or otherwise make available (collectively, "post") on the Service or transmit to other members (collectively, "Content"). Zutual's license to your Content shall be non-exclusive, except that Zutual's license shall be exclusive with respect to derivative works created through use of the Service. For example, Zutual would have an exclusive license to screenshots of the Service that include your Content. Our license to your Content is subject to your rights under applicable law and is for the limited purpose of operating, developing, providing, and improving the Service and researching and developing new ones.</p>
-    <p>You agree that any Content you place or that you authorize us to place on the Service may be viewed by other members and may be viewed by any person visiting or participating in the Service (such as individuals who may receive shared Content from other Zutual members).</p>
-    <p>You agree that all information that you submit upon creation of your account, including information submitted from your Facebook account, is accurate and truthful and you have the right to post the Content on the Service and grant the license to Zutual above.</p>
-    <p>You understand and agree that we may monitor or review any Content you post as part of a Service. We may delete any Content, in whole or in part, that in our sole judgment violates this Agreement or may harm the reputation of the Service.</p>
-    <p>When communicating with our customer care representatives, you agree to be respectful and kind. If we feel that your behavior towards any of our customer care representatives or other employees is at any time threatening or offensive, we reserve the right to immediately terminate your account.</p>
-    <p>In consideration for Zutual allowing you to use the Service, you agree that we, our affiliates, and our third-party partners may place advertising on the Service. By submitting suggestions or feedback to Zutual regarding our Service, you agree that Zutual may use and share such feedback for any purpose without compensating you.</p>
-    <p>Please be informed that Zutual may access, store and disclose your account information and Content if required to do so by law, by performing its agreement with you, or in a good faith belief that such access, storage or disclosure satisfies a legitimate interest, including to: (i) comply with legal process; (ii) enforce the Agreement; (iii) respond to claims that any Content violates the rights of third parties; (iv) respond to your requests for customer service; or (v) protect the rights, property or personal safety of the Company or any other person.</p>
+        <h2>7. Rights You Grant Zutual</h2>
+        <p>By creating an account, you grant to Zutual a worldwide, transferable, sub-licensable, royalty-free, right and license to host, store, use, copy, display, reproduce, adapt, edit, publish, modify and distribute information you post, upload, display or otherwise make available (collectively, "post") on the Service or transmit to other members (collectively, "Content"). Zutual's license to your Content shall be non-exclusive, except that Zutual's license shall be exclusive with respect to derivative works created through use of the Service. For example, Zutual would have an exclusive license to screenshots of the Service that include your Content. Our license to your Content is subject to your rights under applicable law and is for the limited purpose of operating, developing, providing, and improving the Service and researching and developing new ones.</p>
+        <p>You agree that any Content you place or that you authorize us to place on the Service may be viewed by other members and may be viewed by any person visiting or participating in the Service (such as individuals who may receive shared Content from other Zutual members).</p>
+        <p>You agree that all information that you submit upon creation of your account, including information submitted from your Facebook account, is accurate and truthful and you have the right to post the Content on the Service and grant the license to Zutual above.</p>
+        <p>You understand and agree that we may monitor or review any Content you post as part of a Service. We may delete any Content, in whole or in part, that in our sole judgment violates this Agreement or may harm the reputation of the Service.</p>
+        <p>When communicating with our customer care representatives, you agree to be respectful and kind. If we feel that your behavior towards any of our customer care representatives or other employees is at any time threatening or offensive, we reserve the right to immediately terminate your account.</p>
+        <p>In consideration for Zutual allowing you to use the Service, you agree that we, our affiliates, and our third-party partners may place advertising on the Service. By submitting suggestions or feedback to Zutual regarding our Service, you agree that Zutual may use and share such feedback for any purpose without compensating you.</p>
+        <p>Please be informed that Zutual may access, store and disclose your account information and Content if required to do so by law, by performing its agreement with you, or in a good faith belief that such access, storage or disclosure satisfies a legitimate interest, including to: (i) comply with legal process; (ii) enforce the Agreement; (iii) respond to claims that any Content violates the rights of third parties; (iv) respond to your requests for customer service; or (v) protect the rights, property or personal safety of the Company or any other person.</p>
 
-    <h2>8. Community Rules</h2>
-    <p>By using the Service, you agree that you will not:</p>
-    <ul>
-      <li>Use the Service for any purpose that is illegal or prohibited by this Agreement.</li>
-      <li>Use the Service for any harmful or nefarious purpose.</li>
-      <li>Use the Service in order to damage Zutual.</li>
-      <li>Violate our Community Guidelines, as updated from time to time.</li>
-      <li>Spam, solicit money from or defraud any members.</li>
-      <li>Impersonate any person or entity or post any images of another person without his or her permission.</li>
-      <li>Bully, "stalk", intimidate, assault, harass, mistreat or defame any person.</li>
-      <li>Post any Content that violates or infringes anyone's rights, including rights of publicity, privacy, copyright, trademark or other intellectual property or contract right.</li>
-      <li>Post any Content that is hate speech, threatening, sexually explicit or pornographic.</li>
-      <li>Post any Content that incites violence; or contains nudity or graphic or gratuitous violence.</li>
-      <li>Post any Content that promotes racism, bigotry, hatred or physical harm of any kind against any group or individual.</li>
-      <li>Solicit passwords for any purpose, or personal identifying information for commercial or unlawful purposes from other members or disseminate another person's personal information without his or her permission.</li>
-      <li>Use another member's account, share an account with another member, or maintain more than one account.</li>
-      <li>Create another account if we have already terminated your account, unless you have our permission.</li>
-    </ul>
-    <p>Zutual reserves the right to investigate and/or terminate your account without a refund of any purchases if you have violated this Agreement, misused the Service or behaved in a way that Zutual regards as inappropriate or unlawful, including actions or communications that occur on or off the Service.</p>
+        <h2>8. Community Rules</h2>
+        <p>By using the Service, you agree that you will not:</p>
+        <ul>
+            <li>Use the Service for any purpose that is illegal or prohibited by this Agreement.</li>
+            <li>Use the Service for any harmful or nefarious purpose.</li>
+            <li>Use the Service in order to damage Zutual.</li>
+            <li>Violate our Community Guidelines, as updated from time to time.</li>
+            <li>Spam, solicit money from or defraud any members.</li>
+            <li>Impersonate any person or entity or post any images of another person without his or her permission.</li>
+            <li>Bully, "stalk", intimidate, assault, harass, mistreat or defame any person.</li>
+            <li>Post any Content that violates or infringes anyone's rights, including rights of publicity, privacy, copyright, trademark or other intellectual property or contract right.</li>
+            <li>Post any Content that is hate speech, threatening, sexually explicit or pornographic.</li>
+            <li>Post any Content that incites violence; or contains nudity or graphic or gratuitous violence.</li>
+            <li>Post any Content that promotes racism, bigotry, hatred or physical harm of any kind against any group or individual.</li>
+            <li>Solicit passwords for any purpose, or personal identifying information for commercial or unlawful purposes from other members or disseminate another person's personal information without his or her permission.</li>
+            <li>Use another member's account, share an account with another member, or maintain more than one account.</li>
+            <li>Create another account if we have already terminated your account, unless you have our permission.</li>
+        </ul>
+        <p>Zutual reserves the right to investigate and/or terminate your account without a refund of any purchases if you have violated this Agreement, misused the Service or behaved in a way that Zutual regards as inappropriate or unlawful, including actions or communications that occur on or off the Service.</p>
 
-    <h2>9. Other Members' Content</h2>
-    <p>Although Zutual reserves the right to review and remove Content that violates this Agreement, such Content is the sole responsibility of the member who posts it, and Zutual cannot guarantee that all Content will comply with this Agreement. If you see Content on the Service that violates this Agreement, please report it within the Service or via our contact form.</p>
+        <h2>9. Other Members' Content</h2>
+        <p>Although Zutual reserves the right to review and remove Content that violates this Agreement, such Content is the sole responsibility of the member who posts it, and Zutual cannot guarantee that all Content will comply with this Agreement. If you see Content on the Service that violates this Agreement, please report it within the Service or via our contact form.</p>
 
-    <h2>10. Purchases</h2>
-    <p>From time to time, Zutual may offer products and services for purchase ("in app purchases") through iTunes, Google Play, carrier billing, Zutual direct billing, or other payment platforms authorized by Zutual. If you choose to make an in-app purchase, you will be prompted to confirm your purchase with the applicable payment provider, and your method of payment will be charged for the in-app purchase at the prices displayed to you for the service(s) you've selected as well as any sales or similar taxes that may be imposed on your payments.</p>
-    <p><strong>Auto-Renewal; Automatic Card Payment</strong><br>Subscriptions are automatically renewed until you terminate or cancel the subscription. Your Payment Method will continue to be billed monthly in advance within 24 hours of the date of the initial purchase at the price you agreed to when initially subscribing. Your card payment information will be stored and subsequently used for the automatic card payments in accordance with the Agreement.</p>
-    <p><strong>Refunds</strong><br>Generally, all charges for purchases are nonrefundable, and there are no refunds or credits for partially used periods. We may make an exception if a refund for a subscription offering is requested within fourteen days of the transaction date, or if the laws applicable in your jurisdiction provide for refunds.</p>
-    <p>To request a refund:</p>
-    <ul>
-      <li>If you subscribed using your Apple ID, refunds are handled by Apple, not Zutual. To request a refund, go to iTunes, click on your Apple ID, select "Purchase history", find the transaction and hit "Report Problem". You can also submit a request at https://getsupport.apple.com.</li>
-      <li>If you subscribed using your Google Play Store account or through Zutual directly: please contact customer support with your order number for the Google Play Store or Zutual (you can find this on your confirmation email). You may also mail or deliver a signed and dated notice which states that you, the buyer, are canceling this agreement, or words of similar effect. Please also include the email address or mobile number associated with your account along with your order number. This notice shall be sent to: Zutual, Attn: Cancellations, [Your Address].</li>
-    </ul>
+        <h2>10. Purchases</h2>
+        <p>From time to time, Zutual may offer products and services for purchase ("in app purchases") through iTunes, Google Play, carrier billing, Zutual direct billing, or other payment platforms authorized by Zutual. If you choose to make an in-app purchase, you will be prompted to confirm your purchase with the applicable payment provider, and your method of payment will be charged for the in-app purchase at the prices displayed to you for the service(s) you've selected as well as any sales or similar taxes that may be imposed on your payments.</p>
+        <p><strong>Auto-Renewal; Automatic Card Payment</strong><br>Subscriptions are automatically renewed until you terminate or cancel the subscription. Your Payment Method will continue to be billed monthly in advance within 24 hours of the date of the initial purchase at the price you agreed to when initially subscribing. Your card payment information will be stored and subsequently used for the automatic card payments in accordance with the Agreement.</p>
+        <p><strong>Refunds</strong><br>Generally, all charges for purchases are nonrefundable, and there are no refunds or credits for partially used periods. We may make an exception if a refund for a subscription offering is requested within fourteen days of the transaction date, or if the laws applicable in your jurisdiction provide for refunds.</p>
+        <p>To request a refund:</p>
+        <ul>
+            <li>If you subscribed using your Apple ID, refunds are handled by Apple, not Zutual. To request a refund, go to iTunes, click on your Apple ID, select "Purchase history", find the transaction and hit "Report Problem". You can also submit a request at https://getsupport.apple.com.</li>
+            <li>If you subscribed using your Google Play Store account or through Zutual directly: please contact customer support with your order number for the Google Play Store or Zutual (you can find this on your confirmation email). You may also mail or deliver a signed and dated notice which states that you, the buyer, are canceling this agreement, or words of similar effect. Please also include the email address or mobile number associated with your account along with your order number. This notice shall be sent to: Zutual, Attn: Cancellations, [Your Address].</li>
+        </ul>
 
-    <h2>11. Notice and Procedure for Making Claims of Copyright Infringement</h2>
-    <p>If you believe that your work has been copied and posted on the Service in a way that constitutes copyright infringement, please provide our Copyright Agent with the following information:</p>
-    <ul>
-      <li>An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest.</li>
-      <li>A description of the copyrighted work that you claim has been infringed.</li>
-      <li>A description of where the material that you claim is infringing is located on the Service.</li>
-      <li>Your contact information, including address, telephone number, and email address.</li>
-      <li>A written statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law.</li>
-      <li>A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.</li>
-    </ul>
-    <p>Notice of claims of copyright infringement should be provided to the Company's Copyright Agent via email to [your email], or via mail to the following address: [Your Address].</p>
+        <h2>11. Notice and Procedure for Making Claims of Copyright Infringement</h2>
+        <p>If you believe that your work has been copied and posted on the Service in a way that constitutes copyright infringement, please provide our Copyright Agent with the following information:</p>
+        <ul>
+            <li>An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest.</li>
+            <li>A description of the copyrighted work that you claim has been infringed.</li>
+            <li>A description of where the material that you claim is infringing is located on the Service.</li>
+            <li>Your contact information, including address, telephone number, and email address.</li>
+            <li>A written statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law.</li>
+            <li>A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.</li>
+        </ul>
+        <p>Notice of claims of copyright infringement should be provided to the Company's Copyright Agent via email to [your email], or via mail to the following address: [Your Address].</p>
 
-    <h2>12. Disclaimers</h2>
-    <p>ZUTUAL PROVIDES THE SERVICE ON AN “AS IS” AND “AS AVAILABLE” BASIS AND TO THE EXTENT PERMITTED BY APPLICABLE LAW, GRANTS NO WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE WITH RESPECT TO THE SERVICE (INCLUDING ALL CONTENT CONTAINED THEREIN), INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF SATISFACTORY QUALITY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. ZUTUAL DOES NOT REPRESENT OR WARRANT THAT (A) THE SERVICE WILL BE UNINTERRUPTED, SECURE OR ERROR FREE, (B) ANY DEFECTS OR ERRORS IN THE SERVICE WILL BE CORRECTED, OR (C) THAT ANY CONTENT OR INFORMATION YOU OBTAIN ON OR THROUGH THE SERVICE WILL BE ACCURATE.</p>
-    <p>ZUTUAL TAKES NO RESPONSIBILITY FOR ANY CONTENT THAT YOU OR ANOTHER MEMBER OR THIRD PARTY POSTS, SENDS OR RECEIVES THROUGH THE SERVICE. ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SERVICE IS ACCESSED AT YOUR OWN DISCRETION AND RISK.</p>
+        <h2>12. Disclaimers</h2>
+        <p>ZUTUAL PROVIDES THE SERVICE ON AN “AS IS” AND “AS AVAILABLE” BASIS AND TO THE EXTENT PERMITTED BY APPLICABLE LAW, GRANTS NO WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE WITH RESPECT TO THE SERVICE (INCLUDING ALL CONTENT CONTAINED THEREIN), INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF SATISFACTORY QUALITY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. ZUTUAL DOES NOT REPRESENT OR WARRANT THAT (A) THE SERVICE WILL BE UNINTERRUPTED, SECURE OR ERROR FREE, (B) ANY DEFECTS OR ERRORS IN THE SERVICE WILL BE CORRECTED, OR (C) THAT ANY CONTENT OR INFORMATION YOU OBTAIN ON OR THROUGH THE SERVICE WILL BE ACCURATE.</p>
+        <p>ZUTUAL TAKES NO RESPONSIBILITY FOR ANY CONTENT THAT YOU OR ANOTHER MEMBER OR THIRD PARTY POSTS, SENDS OR RECEIVES THROUGH THE SERVICE. ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SERVICE IS ACCESSED AT YOUR OWN DISCRETION AND RISK.</p>
 
-    <h2>13. Third Party Services</h2>
-    <p>The Service may contain advertisements and promotions offered by third parties and links to other web sites or resources. Zutual is not responsible for the availability (or lack of availability) of such external websites or resources. If you choose to interact with the third parties made available through our Service, such party's terms will govern their relationship with you. Zutual is not responsible or liable for such third parties' terms or actions.</p>
+        <h2>13. Third Party Services</h2>
+        <p>The Service may contain advertisements and promotions offered by third parties and links to other web sites or resources. Zutual is not responsible for the availability (or lack of availability) of such external websites or resources. If you choose to interact with the third parties made available through our Service, such party's terms will govern their relationship with you. Zutual is not responsible or liable for such third parties' terms or actions.</p>
 
-    <h2>14. Limitation of Liability</h2>
-    <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL ZUTUAL, ITS AFFILIATES, EMPLOYEES, LICENSORS OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL OR PUNITIVE DAMAGES, INCLUDING, WITHOUT LIMITATION, LOSS OF PROFITS, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM: (I) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICE, (II) THE CONDUCT OR CONTENT OF OTHER MEMBERS OR THIRD PARTIES ON, THROUGH, OR FOLLOWING USE OF THE SERVICE; OR (III) UNAUTHORIZED ACCESS, USE OR ALTERATION OF YOUR CONTENT, EVEN IF ZUTUAL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT WILL ZUTUAL’S AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS RELATING TO THE SERVICE EXCEED THE GREATER OF THE AMOUNT PAID, IF ANY, BY YOU TO ZUTUAL FOR THE SERVICE AND USD100 WHILE YOU HAVE AN ACCOUNT.</p>
-    <p>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO SOME OR ALL OF THE EXCLUSIONS AND LIMITATIONS IN THIS SECTION MAY NOT APPLY TO YOU.</p>
+        <h2>14. Limitation of Liability</h2>
+        <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL ZUTUAL, ITS AFFILIATES, EMPLOYEES, LICENSORS OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL OR PUNITIVE DAMAGES, INCLUDING, WITHOUT LIMITATION, LOSS OF PROFITS, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM: (I) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICE, (II) THE CONDUCT OR CONTENT OF OTHER MEMBERS OR THIRD PARTIES ON, THROUGH, OR FOLLOWING USE OF THE SERVICE; OR (III) UNAUTHORIZED ACCESS, USE OR ALTERATION OF YOUR CONTENT, EVEN IF ZUTUAL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT WILL ZUTUAL’S AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS RELATING TO THE SERVICE EXCEED THE GREATER OF THE AMOUNT PAID, IF ANY, BY YOU TO ZUTUAL FOR THE SERVICE AND USD100 WHILE YOU HAVE AN ACCOUNT.</p>
+        <p>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO SOME OR ALL OF THE EXCLUSIONS AND LIMITATIONS IN THIS SECTION MAY NOT APPLY TO YOU.</p>
 
-    <h2>15. Arbitration, Class-Action Waiver, and Jury Waiver</h2>
-    <p>Except for members residing within the EU or European Economic Area and elsewhere where prohibited by applicable law:</p>
-    <p>The exclusive means of resolving any dispute or claim arising out of or relating to this Agreement (including any alleged breach thereof) or the Service shall be BINDING ARBITRATION administered by [Your Arbitration Service] under the [Arbitration Rules], except as modified by our Arbitration Procedures. The one exception to the exclusivity of arbitration is that either party has the right to bring an individual claim against the other in a small claims court of competent jurisdiction, or, if filed in arbitration, the responding party may request that the dispute proceed in small claims court instead if the claim is within the jurisdiction of the small claims court. If the request to proceed in small claims court is made before an arbitrator has been appointed, the arbitration shall be administratively closed. If the request to proceed in small claims court is made after an arbitrator has been appointed, the arbitrator shall determine whether the dispute should remain in arbitration or instead be decided in small claims court. Such arbitration shall be conducted by written submissions only, unless either you or Zutual elect to invoke the right to an oral hearing before the Arbitrator. But whether you choose arbitration or small claims court, you agree that you will not under any circumstances commence, or maintain, or participate in against the Company any class action, class arbitration, or other representative action or proceeding against Zutual.</p>
-    <p>By using the Service in any manner, you agree to the above arbitration agreement. In doing so, YOU GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend any claims between you and the Company (except for matters that may be taken to small-claims court). YOU ALSO GIVE UP YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION OR OTHER CLASS PROCEEDING. If you assert a claim against Zutual outside of small claims court (and Zutual does not request that the claim be moved to small claims court), your rights will be determined by a NEUTRAL ARBITRATOR, NOT A JUDGE OR JURY, and the arbitrator shall determine all claims and all issues regarding the arbitrability of the dispute. You are entitled to a fair hearing before the arbitrator. The arbitrator can generally grant any relief that a court can, including the ability to hear a dispositive motion, but you should note that arbitration proceedings are usually simpler and more streamlined than trials and other judicial proceedings. Decisions by the arbitrator are enforceable in court and may be overturned by a court only for very limited reasons. For details on the arbitration process, see our Arbitration Procedures.</p>
-    <p>Any proceeding to enforce this arbitration agreement, including any proceeding to confirm, modify, or vacate an arbitration award, may be commenced in any court of competent jurisdiction. In the event that this arbitration agreement is for any reason held to be unenforceable, any litigation against the Company (except for small-claims court actions) may be commenced only in the federal or state courts located in [Your State/Province]. You hereby irrevocably consent to the jurisdiction of those courts for such purposes.</p>
-    <p>The online dispute settlement platform of the European Commission is available under http://ec.europa.eu/odr. Zutual does not take part in dispute settlement procedures in front of a consumer arbitration entity for members residing in the EU or European Economic Area.</p>
+        <h2>15. Arbitration, Class-Action Waiver, and Jury Waiver</h2>
+        <p>Except for members residing within the EU or European Economic Area and elsewhere where prohibited by applicable law:</p>
+        <p>The exclusive means of resolving any dispute or claim arising out of or relating to this Agreement (including any alleged breach thereof) or the Service shall be BINDING ARBITRATION administered by [Your Arbitration Service] under the [Arbitration Rules], except as modified by our Arbitration Procedures. The one exception to the exclusivity of arbitration is that either party has the right to bring an individual claim against the other in a small claims court of competent jurisdiction, or, if filed in arbitration, the responding party may request that the dispute proceed in small claims court instead if the claim is within the jurisdiction of the small claims court. If the request to proceed in small claims court is made before an arbitrator has been appointed, the arbitration shall be administratively closed. If the request to proceed in small claims court is made after an arbitrator has been appointed, the arbitrator shall determine whether the dispute should remain in arbitration or instead be decided in small claims court. Such arbitration shall be conducted by written submissions only, unless either you or Zutual elect to invoke the right to an oral hearing before the Arbitrator. But whether you choose arbitration or small claims court, you agree that you will not under any circumstances commence, or maintain, or participate in against the Company any class action, class arbitration, or other representative action or proceeding against Zutual.</p>
+        <p>By using the Service in any manner, you agree to the above arbitration agreement. In doing so, YOU GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend any claims between you and the Company (except for matters that may be taken to small-claims court). YOU ALSO GIVE UP YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION OR OTHER CLASS PROCEEDING. If you assert a claim against Zutual outside of small claims court (and Zutual does not request that the claim be moved to small claims court), your rights will be determined by a NEUTRAL ARBITRATOR, NOT A JUDGE OR JURY, and the arbitrator shall determine all claims and all issues regarding the arbitrability of the dispute. You are entitled to a fair hearing before the arbitrator. The arbitrator can generally grant any relief that a court can, including the ability to hear a dispositive motion, but you should note that arbitration proceedings are usually simpler and more streamlined than trials and other judicial proceedings. Decisions by the arbitrator are enforceable in court and may be overturned by a court only for very limited reasons. For details on the arbitration process, see our Arbitration Procedures.</p>
+        <p>Any proceeding to enforce this arbitration agreement, including any proceeding to confirm, modify, or vacate an arbitration award, may be commenced in any court of competent jurisdiction. In the event that this arbitration agreement is for any reason held to be unenforceable, any litigation against the Company (except for small-claims court actions) may be commenced only in the federal or state courts located in [Your State/Province]. You hereby irrevocably consent to the jurisdiction of those courts for such purposes.</p>
+        <p>The online dispute settlement platform of the European Commission is available under http://ec.europa.eu/odr. Zutual does not take part in dispute settlement procedures in front of a consumer arbitration entity for members residing in the EU or European Economic Area.</p>
 
-    <h2>16. Governing Law</h2>
-    <p>For members residing in the EU or European Economic Area or elsewhere where our arbitration agreement is prohibited by law, the laws of [Your State/Province], excluding [Your State/Province]’s conflict of laws rules, will apply to any disputes arising out of or relating to this Agreement or the Service. Notwithstanding the foregoing, the Arbitration Agreement in Section 15 above shall be governed by the Federal Arbitration Act. For the avoidance of doubt, the choice of [Your State/Province] governing law shall not supersede any mandatory consumer protection legislation in such jurisdictions.</p>
+        <h2>16. Governing Law</h2>
+        <p>For members residing in the EU or European Economic Area or elsewhere where our arbitration agreement is prohibited by law, the laws of [Your State/Province], excluding [Your State/Province]’s conflict of laws rules, will apply to any disputes arising out of or relating to this Agreement or the Service. Notwithstanding the foregoing, the Arbitration Agreement in Section 15 above shall be governed by the Federal Arbitration Act. For the avoidance of doubt, the choice of [Your State/Province] governing law shall not supersede any mandatory consumer protection legislation in such jurisdictions.</p>
 
-    <h2>17. Venue</h2>
-    <p>Except for members residing in the EU or European Economic Area who may bring claims in their country of residence in accordance with applicable law and except for claims that may be properly brought in a small claims court of competent jurisdiction, all claims arising out of or relating to this Agreement, to the Service, or to your relationship with Zutual that for whatever reason are not submitted to arbitration will be litigated exclusively in the federal or state courts of [Your State/Province]. You and Zutual consent to the exercise of personal jurisdiction of courts in the State of [Your State/Province] and waive any claim that such courts constitute an inconvenient forum.</p>
+        <h2>17. Venue</h2>
+        <p>Except for members residing in the EU or European Economic Area who may bring claims in their country of residence in accordance with applicable law and except for claims that may be properly brought in a small claims court of competent jurisdiction, all claims arising out of or relating to this Agreement, to the Service, or to your relationship with Zutual that for whatever reason are not submitted to arbitration will be litigated exclusively in the federal or state courts of [Your State/Province]. You and Zutual consent to the exercise of personal jurisdiction of courts in the State of [Your State/Province] and waive any claim that such courts constitute an inconvenient forum.</p>
 
-    <h2>18. Indemnity by You</h2>
-    <p>You agree, to the extent permitted under applicable law, to indemnify, defend and hold harmless Zutual, our affiliates, and their and our respective officers, directors, agents, and employees from and against any and all complaints, demands, claims, damages, losses, costs, liabilities and expenses, including attorney’s fees due to, arising out of, or relating in any way to your access to or use of the Service, your Content, or your breach of this Agreement.</p>
+        <h2>18. Indemnity by You</h2>
+        <p>You agree, to the extent permitted under applicable law, to indemnify, defend and hold harmless Zutual, our affiliates, and their and our respective officers, directors, agents, and employees from and against any and all complaints, demands, claims, damages, losses, costs, liabilities and expenses, including attorney’s fees due to, arising out of, or relating in any way to your access to or use of the Service, your Content, or your breach of this Agreement.</p>
 
-    <h2>19. Entire Agreement</h2>
-    <p>This Agreement, along with the Privacy Policy, contains the entire agreement between you and Zutual regarding the use of the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. The failure of the Company to exercise or enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision. You agree that your Zutual account is non-transferable and all of your rights to your account and its Content terminate upon your death. No agency, partnership, joint venture, fiduciary or other special relationship or employment is created as a result of this Agreement and you may not make any representations on behalf of or bind Zutual in any manner.</p>
+        <h2>19. Entire Agreement</h2>
+        <p>This Agreement, along with the Privacy Policy, contains the entire agreement between you and Zutual regarding the use of the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. The failure of the Company to exercise or enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision. You agree that your Zutual account is non-transferable and all of your rights to your account and its Content terminate upon your death. No agency, partnership, joint venture, fiduciary or other special relationship or employment is created as a result of this Agreement and you may not make any representations on behalf of or bind Zutual in any manner.</p>
 
-    <p>Thank you for using Zutual!</p>
+        <p>Thank you for using Zutual!</p>
 
-    <p><strong>Effective Date: 22 July 2024</strong></p>
-  </div>
+        <p><strong>Effective Date: 22 July 2024</strong></p>
+    </div>
 </body>
 </html>

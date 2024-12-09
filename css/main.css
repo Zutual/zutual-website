@@ -34,6 +34,14 @@
  *
  * =================================================================== */
 
+:root {
+  --primary-color: #00E5FF; /* Cyan accent color from app */
+  --secondary-color: #ec008c; /* Keep existing magenta as secondary */
+  --bg-dark: #141414;
+  --bg-darker: #111111;
+  --text-light: rgba(255, 255, 255, 0.87);
+  --text-dim: rgba(255, 255, 255, 0.6);
+}
 
 /* ===================================================================
  * # base style overrides - (_document-setup.scss)
@@ -41,6 +49,7 @@
  * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width:400px) {
@@ -54,18 +63,8 @@ html,
 body {
   height: 100%;  /* prevent horizontal scrolling */
   overflow: hidden;
-}
-
-body {
-  background: #111111;
-  font-family: "metropolis-regular", sans-serif;
-  font-size: 1.7rem;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.765;
-  color: #757575;
-  margin: 0;
-  padding: 0;
+  background: var(--bg-dark);
+  color: var(--text-light);
 }
 
 /* ------------------------------------------------------------------- 
@@ -2377,3 +2376,22 @@ html.no-csstransitions .home-content__main {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* Add glassmorphism effect for cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+/* Add glow effects */
+.glow {
+  box-shadow: 0 0 15px var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.glow:hover {
+  box-shadow: 0 0 30px var(--primary-color);
+}
